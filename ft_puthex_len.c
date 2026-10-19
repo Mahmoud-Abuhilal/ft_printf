@@ -6,7 +6,7 @@
 /*   By: mabuhila <mabuhila@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 11:58:19 by mabuhila          #+#    #+#             */
-/*   Updated: 2026/10/19 15:34:39 by mabuhila         ###   ########.fr       */
+/*   Updated: 2026/10/19 16:07:16 by mabuhila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_puthex_len(unsigned int num, char specifier)
 	count = 0;
 	if (specifier == 'x')
 		hex = "0123456789abcdef";
-	else if (specifier == 'X')
+	else
 		hex = "0123456789ABCDEF";
 	if (num >= 16)
 		count += ft_puthex_len(num / 16, specifier);
