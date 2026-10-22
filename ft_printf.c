@@ -6,7 +6,7 @@
 /*   By: mabuhila <mabuhila@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 10:45:11 by mabuhila          #+#    #+#             */
-/*   Updated: 2026/10/19 15:34:35 by mabuhila         ###   ########.fr       */
+/*   Updated: 2026/10/22 14:53:03 by mabuhila         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 static int	print_args(char format, va_list args)
 {
-	int	count;
-
-	count = 0;
 	if (format == 'c')
 		return (ft_putchar_len(va_arg(args, int)));
 	else if (format == 's')
